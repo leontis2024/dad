@@ -1,10 +1,9 @@
 name: Deploy page
 
 on:
-  push:
-    branches: ["qa"]
   pull_request:
-    branches: ["qa"]
+    branches: ["main"]
+    types: [closed]
 
 jobs:
   build:
