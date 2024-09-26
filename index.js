@@ -1,3 +1,9 @@
+firebase.auth().onAuthStateChanged(function(user){
+  if(user){
+    window.location.href = "./dashboards/index.html";
+  }
+})
+
 const theme = JSON.parse(localStorage.getItem("theme"));
 if (theme == null || theme == "") {
   localStorage.setItem("theme", JSON.stringify("light"));
