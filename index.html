@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Área restrita</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+
+    <div class="background background_light">
+       
+      <img id="button_theme" src="./assets/moon.png" alt="" />
+      
+      <main class="light">
+        <div>
+          <h2>Login área restrita</h2>
+          <input type="email" name="email" id="email" placeholder="E-mail" />
+          <p id="erroEmail"></p>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Senha"
+          />
+          <p id="erroSenha"></p>
+          <button type="submit" disabled="true" id="acessar">Acessar</button>
+        </div>
+      </main>
+  
+    </div>
+
+    </div>
+ 
+
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
+    <script src="loading.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyA2q4t4yhxAOgRUPjprr6DGxkcJ71xD_ls",
+        authDomain: "area-restrita-9256a.firebaseapp.com",
+        projectId: "area-restrita-9256a",
+        storageBucket: "area-restrita-9256a.appspot.com",
+        messagingSenderId: "823209580950",
+        appId: "1:823209580950:web:d22c8ec766cc8ef314a5b7",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    
+  </body>
+
+</html>
