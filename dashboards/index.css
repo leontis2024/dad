@@ -1,0 +1,8 @@
+iframe{
+    border: solid black 2px;
+    border-radius: 10px;
+    margin: auto;
+}
+*{
+    background-color: #6e3131;
+}
