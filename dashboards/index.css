@@ -120,36 +120,36 @@ select{
   }
 
 
-  @media (max-width: 400px) {
+  @media (max-width: 600px) {
     .light  {
-      width: 30em;
+      width: 40em;
     }
     .principal{
         width: 30em;
         margin: auto;
     }
     h1{
-       font-size: 1em;
+       font-size: 1.2em;
     }
     iframe{
         margin: auto;
-        width: 15em;
+        width: 20em;
     }
   }
-  @media (max-width:400px) {
+  @media (max-width:600px) {
     .dark  {
-      width: 30em;
+      width: 40em;
     }
     .principal{
         width: 30em;
         margin: auto;
     }
     h1{
-        font-size: 1em;
+        font-size: 1.2em;
      }
     iframe{
         margin: auto;
-        width: 15em;
+        width: 20em;
     }
   }
 
