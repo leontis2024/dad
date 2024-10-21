@@ -8,9 +8,18 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <h1>hellou</h1>
-    <iframe title="possiveis_usuarios" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=52588cbb-11d3-4687-b6d1-042e64344d8e&autoAuth=true&ctid=b148f14c-2397-402c-ab6a-1b4711177ac0" frameborder="0" allowFullScreen="true"></iframe>
-    <button id="logout">Logout</button>
+    <main class="light">
+      <h1>Dashboards LEONTIS</h1>
+      <div class="principal">
+        <select name="" id="dash">
+          <option value="1">Dados de cultura</option>
+          <option value="2">Dados sobre as obras</option>
+        </select>
+        <iframe id="dashboard" title="possiveis_usuarios" width="800" height="450" src="https://app.powerbi.com/view?r=eyJrIjoiMzZmNDg5YWUtZmExNS00ZWUzLWE5NjAtYTk4OTY5NjhhZmI0IiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        
+        <button id="logout">Logout</button>
+      </div>
+    </main>
   </body>
   <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
