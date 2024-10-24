@@ -1,4 +1,3 @@
-//const main = document.getElementsByTagName("main")[0]
 function iniciarCarregamento() {
   const div = document.createElement("div");
   div.setAttribute("id", "loading");

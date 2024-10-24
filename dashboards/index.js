@@ -6,9 +6,7 @@ if (theme == null || theme == "") {
 if (theme == "dark") {
   main.classList.add("dark");
   main.classList.remove("light");
-  // buttonTheme.setAttribute("src", "./assets/sun_light.png");
-  // background.classList.add("background_dark");
-  // background.classList.remove("background_light");
+
 }else{
   main.classList.remove("dark");
   main.classList.add("light");

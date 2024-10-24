@@ -18,15 +18,15 @@
         <div>
           <h2>Login área restrita</h2>
           <input type="email" name="email" id="email" placeholder="E-mail" />
-          <p id="erroEmail"></p>
+          <p id="erroEmail" class="p"></p>
           <input
             type="password"
             name="password"
             id="password"
             placeholder="Senha"
           />
-          <p id="erroSenha"></p>
-          <button type="submit" disabled="true" id="acessar">Acessar</button>
+          <p id="erroSenha" class="p"></p>
+          <button class="button" type="submit" disabled="true" id="acessar">Acessar</button>
         </div>
       </main>
   
@@ -38,6 +38,7 @@
     <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
     <script src="loading.js"></script>
+    <script src="alerta.js"></script>
     <script>
       const firebaseConfig = {
         apiKey: "AIzaSyA2q4t4yhxAOgRUPjprr6DGxkcJ71xD_ls",
