@@ -22,10 +22,10 @@ email.addEventListener("change", () => {
 botaoSubmit.addEventListener("click", () => {
   if (botaoSubmit.disabled == false) {
     iniciarCarregamento();
-    setTimeout(()=>{
-      finalizarCarregamento()
-      mostrarAlerta("Usuário museu criado com sucesso")
-    },2500)
+    setTimeout(() => {
+      finalizarCarregamento();
+      fazerRequisicao(email.value);
+    }, 2500);
   }
 });
 
@@ -54,4 +54,32 @@ function validarCampos() {
 function verificarEmailValido(email) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(email);
+}
+
+function fazerRequisicao(email) {
+  fetch("http://ec2-52-44-41-122.compute-1.amazonaws.com:8080/api/museuAdm", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email: email,
+      senha: "senhaPadrao",
+    }),
+  })
+    .then((response) => {
+      if (response.ok) {
+        return response.json(); 
+      } else {
+        throw new Error("Erro ao criar usuário");
+      }
+    })
+    .then((data) => {
+      console.log("Usuário criado:", data);
+      mostrarAlerta("Usuário museu criado com sucesso"); 
+    })
+    .catch((error) => {
+      console.error("Erro:", error);
+      mostrarAlerta("Erro ao cadastrar");
+    });
 }

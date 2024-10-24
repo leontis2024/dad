@@ -45,7 +45,7 @@ senha.addEventListener("keydown", (e) => {
 botaoSubmit.addEventListener("click", () => {
   if (botaoSubmit.disabled == false) {
     iniciarCarregamento();
-    if (email.value == "leontis@202.com" && senha.value == "asenhadoleontis") {
+    if (email.value == "leontis@2024.com" && senha.value == "asenhadoleontis") {
       window.location.href = "./cadastroMuseu/index.html";
     } else {
       login();

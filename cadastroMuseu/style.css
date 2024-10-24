@@ -163,8 +163,8 @@ body {
   border: 0.4em solid #f3f3f3; /* Cor de fundo do círculo */
   border-radius: 50%;
   border-top: 0.5em solid #6e3131; /* Cor da animação */
-  width: 5em;
-  height:5em;
+  width: .2em;
+  height:.2em;
   animation: spin 1s linear infinite; /* Define a animação de rotação */
  top:15em
 }
