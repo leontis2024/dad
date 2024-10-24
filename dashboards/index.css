@@ -16,6 +16,7 @@ h1 {
 }
 .light,
 .dark {
+  padding-top: 2em;
   width: 100%;
   height: 100em;
 }
@@ -26,6 +27,7 @@ h1 {
   background-color: #7c3939;
 }
 body {
+
   overflow: hidden;
   margin: 0;
   display: flex;
@@ -84,7 +86,7 @@ select {
   box-shadow: 0 0 5px rgba(245, 224, 212, 0.5);
   transform: scale(1.1);
 }
-@media (max-width: 1430px) {
+@media (max-width: 1420px) {
   .light {
     width: 50em;
   }
@@ -101,7 +103,7 @@ select {
     margin: auto;
   }
 }
-@media (max-width: 1430px) {
+@media (max-width: 1420px) {
   .dark {
     width: 50em;
   }

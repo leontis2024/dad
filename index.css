@@ -11,7 +11,7 @@
   height: 60em; /* Define a altura do contêiner */
   width: 100%; /* Define a largura total */
 }
-p {
+.p {
   margin: 0;
   font-family: "Lexend Exa";
   text-align: start;
@@ -25,10 +25,10 @@ p {
 main > .erroContainer {
   gap: 1em !important;
 }
-.light > div > p {
+.light > div > .p {
   color: #f5e0d4;
 }
-.dark > div > p {
+.dark > div > .p {
   color: #6e3131;
 }
 .visivel {
@@ -49,7 +49,7 @@ main > .erroContainer {
 .light,
 .dark {
   width: 100%;
-  height: 23em;
+  height: 25em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +71,7 @@ main > .erroContainer {
   font-weight: 600;
   text-align: center;
 }
-.light > div > button {
+.light > div > .button {
   width: 10em;
   height: 2.8em;
   border-radius: 0.3em;
@@ -84,7 +84,7 @@ main > .erroContainer {
   cursor: pointer;
 }
 
-.light > div > button:disabled {
+.light > div > .button:disabled {
   opacity: 0.5;
 }
 .light > div > input {
@@ -107,7 +107,7 @@ main > .erroContainer {
   border-color: #f5e0d4;
   border-radius: 0.2em;
 }
-.light > div > button:hover {
+.light > div > .button:hover {
   background-color: #f5e0d4;
   box-shadow: 0 0 5px rgba(245, 224, 212, 0.5);
   transform: scale(1.1);
@@ -130,7 +130,7 @@ main > .erroContainer {
   font-weight: 600;
   text-align: center;
 }
-.dark > div > button {
+.dark > div > .button {
   width: 10em;
   height: 2.8em;
   border-radius: 0.3em;
@@ -142,7 +142,7 @@ main > .erroContainer {
   font-family: "Lexend Exa";
   cursor: pointer;
 }
-.dark > div > button:disabled {
+.dark > div > .button:disabled {
   opacity: 0.5;
 }
 .dark > div > input {
@@ -162,21 +162,65 @@ main > .erroContainer {
   border-color: #7c3939;
   border-radius: 0.2em;
 }
-.dark > div > button:hover {
+.dark > div > .button:hover {
   background-color: #6e3131;
   box-shadow: 0 0 5px rgba(124, 57, 57, 0.5);
   transform: scale(1.1);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .light {
+    width: 35em;
+  }
   .light > div {
-    margin-right: 1.6em;
+    margin: auto;
     width: 13em;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .dark {
+    width: 35em;
+  }
   .dark > div {
-    margin-right: 1.6em;
+    margin: auto;
+    width: 13em;
+  }
+}
+
+@media (max-width: 550px) {
+  .light {
+    width: 30em;
+  }
+  .light > div {
+    margin: auto;
+    width: 13em;
+  }
+}
+@media (max-width: 550px) {
+  .dark {
+    width: 30em;
+  }
+  .dark > div {
+    margin: auto;
+    width: 13em;
+  }
+}
+
+@media (max-width: 450px) {
+  .light {
+    width: 25em;
+  }
+  .light > div {
+    margin: auto;
+    width: 13em;
+  }
+}
+@media (max-width: 450px) {
+  .dark {
+    width: 25em;
+  }
+  .dark > div {
+    margin: auto;
     width: 13em;
   }
 }
@@ -192,6 +236,58 @@ main {
 img {
   width: 1.6em;
   height: 1.6em;
+}
+.light > div > #texto {
+  font-family: "Lexend Exa";
+  font-size: 1.2em;
+  display: inline;
+  color: #f3f3f3;
+}
+.dark > div > #texto {
+  font-family: "Lexend Exa";
+  font-size: 1.2em;
+  display: inline;
+  color: #282525 ;
+}
+.light > #alerta {
+  background: #6e3131;
+  position: fixed;
+  border: 0.1em solid #f3f3f3;
+  width: 10em;
+  color: #f3f3f3;
+  top: 2em;
+  height: 5em;
+}
+.dark > #alerta {
+  background: #f3f3f3;
+  position: fixed;
+  border: 0.1em solid #6e3131;
+  width: 10em;
+  color: #282525 ;
+  top: 2em;
+  height: 5em;
+}
+.light > div > #btnAlerta {
+  padding: 0.5em 1.5em;
+  border-radius: 0.3em;
+  border: none;
+  margin: auto;
+  background-color: #f5e0d4;
+  color: #282525;
+  transition: transform 0.3s ease;
+  font-family: "Lexend Exa";
+  cursor: pointer;
+}
+.dark > div > #btnAlerta {
+  padding: 0.5em 1.5em;
+  border-radius: 0.3em;
+  border: none;
+  margin: auto;
+  background-color: #6e3131;
+  color: #f5e0d4;
+  transition: transform 0.3s ease;
+  font-family: "Lexend Exa";
+  cursor: pointer;
 }
 
 #loading {
