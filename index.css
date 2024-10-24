@@ -168,15 +168,59 @@ main > .erroContainer {
   transform: scale(1.1);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .light{
+    width: 35em;
+  }
   .light > div {
-    margin-right: 1.6em;
+    margin:auto;
     width: 13em;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .dark{
+    width: 35em;
+  }
   .dark > div {
-    margin-right: 1.6em;
+    margin:auto;
+    width: 13em;
+  }
+}
+
+@media (max-width: 550px) {
+  .light{
+    width: 30em;
+  }
+  .light > div {
+    margin:auto;
+    width: 13em;
+  }
+}
+@media (max-width: 550px) {
+  .dark{
+    width: 30em;
+  }
+  .dark > div {
+    margin:auto;
+    width: 13em;
+  }
+}
+
+@media (max-width: 450px) {
+  .light{
+    width: 25em;
+  }
+  .light > div {
+    margin:auto;
+    width: 13em;
+  }
+}
+@media (max-width: 450px) {
+  .dark{
+    width: 25em;
+  }
+  .dark > div {
+    margin:auto;
     width: 13em;
   }
 }
