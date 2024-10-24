@@ -241,7 +241,7 @@ img {
   font-family: "Lexend Exa";
   font-size: 1.2em;
   display: inline;
-  color: #f3f3f3;
+  color: #f5e0d4;
 }
 .dark > div > #texto {
   font-family: "Lexend Exa";
@@ -252,14 +252,14 @@ img {
 .light > #alerta {
   background: #6e3131;
   position: fixed;
-  border: 0.1em solid #f3f3f3;
+  border: 0.1em solid #f5e0d4;
   width: 10em;
-  color: #f3f3f3;
+  color: #f5e0d4;
   top: 2em;
   height: 5em;
 }
 .dark > #alerta {
-  background: #f3f3f3;
+  background: #f5e0d4;
   position: fixed;
   border: 0.1em solid #6e3131;
   width: 10em;
