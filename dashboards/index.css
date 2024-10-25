@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap");
+iframe {
+  border-radius: 10px;
+  margin: auto;
+}
+h1 {
+  font-family: "Lexend Exa";
+  text-align: center;
+}
+.light > h1 {
+  color: #000000b3;
+}
+.dark > h1 {
+  color: #f5e0d4;
+}
+.light,
+.dark {
+  padding-top: 2em;
+  width: 100%;
+  height: 100em;
+}
+.light {
+  background-color: #f5e0d4;
+}
+.dark {
+  background-color: #7c3939;
+}
+body {
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.4em;
+}
+select {
+  font-family: "Asap Condensed";
+}
+.dark > div > option {
+  color: #f5e0d4;
+}
+.light > div > iframe {
+  border: solid #7c3939 0.2em;
+}
+.dark > div > iframe {
+  border: solid #f5e0d4 0.2em;
+}
+.light > div > button {
+  width: 10em;
+  height: 2.8em;
+  border-radius: 0.3em;
+  border: none;
+  margin: auto;
+  font-weight: 600;
+  background-color: #7c3939;
+  color: #f5e0d4;
+  transition: transform 0.3s ease;
+  font-family: "Lexend Exa";
+  cursor: pointer;
+}
+.light > div > button:hover {
+  background-color: #642d2d;
+  box-shadow: 0 0 5px rgba(124, 57, 57, 0.5);
+  transform: scale(1.1);
+}
+
+.dark > div > button {
+  width: 10em;
+  height: 2.8em;
+  border-radius: 0.3em;
+  border: none;
+  margin: auto;
+  font-weight: 600;
+  background-color: #f5e0d4;
+  color: #7c3939;
+  transition: transform 0.3s ease;
+  font-family: "Lexend Exa";
+  cursor: pointer;
+}
+.dark > div > button:hover {
+  background-color: #decbbf;
+  box-shadow: 0 0 5px rgba(245, 224, 212, 0.5);
+  transform: scale(1.1);
+}
+@media (max-width: 1400px) {
+  .light {
+    width: 55em;
+  }
+  .principal {
+    width: 30em;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+  iframe {
+    width: 27em;
+    height: 32em;
+    margin: auto;
+  }
+}
+@media (max-width: 1400px) {
+  .dark {
+    width: 55em;
+  }
+  .principal {
+    width: 30em;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+  iframe {
+    height: 32em;
+    margin: auto;
+    width: 27em;
+  }
+}
+
+@media (max-width: 720px) {
+  .light {
+    width: 40em;
+  }
+  .principal {
+    width: 30em;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  iframe {
+    margin: auto;
+    width: 20em;
+  }
+}
+@media (max-width: 720px) {
+  .dark {
+    width: 40em;
+  }
+  .principal {
+    width: 30em;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  iframe {
+    margin: auto;
+    width: 20em;
+  }
+}

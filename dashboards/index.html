@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboards</title>
+    <script src="index.js" defer></script>
+    <link rel="shortcut icon" href="../assets/ic_dash.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <main class="light">
+      <h1>Dashboards LEONTIS</h1>
+      <div class="principal">
+        <select name="" id="dash">
+          <option value="1">Dados de cultura</option>
+          <option value="2">Dados sobre as obras</option>
+        </select>
+        <iframe id="dashboard" title="possiveis_usuarios" width="750" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiMzZmNDg5YWUtZmExNS00ZWUzLWE5NjAtYTk4OTY5NjhhZmI0IiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        
+        <button id="logout">Logout</button>
+      </div>
+    </main>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyA2q4t4yhxAOgRUPjprr6DGxkcJ71xD_ls",
+      authDomain: "area-restrita-9256a.firebaseapp.com",
+      projectId: "area-restrita-9256a",
+      storageBucket: "area-restrita-9256a.appspot.com",
+      messagingSenderId: "823209580950",
+      appId: "1:823209580950:web:d22c8ec766cc8ef314a5b7",
+    };
+
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</html>
