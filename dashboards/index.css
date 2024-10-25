@@ -27,7 +27,6 @@ h1 {
   background-color: #7c3939;
 }
 body {
-
   overflow: hidden;
   margin: 0;
   display: flex;
@@ -44,6 +43,9 @@ body {
 }
 select {
   font-family: "Asap Condensed";
+}
+.dark>div>select{
+  color: #f5e0d4;
 }
 .light > div > iframe {
   border: solid #7c3939 0.2em;
@@ -86,9 +88,9 @@ select {
   box-shadow: 0 0 5px rgba(245, 224, 212, 0.5);
   transform: scale(1.1);
 }
-@media (max-width: 1420px) {
+@media (max-width: 1400px) {
   .light {
-    width: 50em;
+    width: 55em;
   }
   .principal {
     width: 30em;
@@ -103,9 +105,9 @@ select {
     margin: auto;
   }
 }
-@media (max-width: 1420px) {
+@media (max-width: 1400px) {
   .dark {
-    width: 50em;
+    width: 55em;
   }
   .principal {
     width: 30em;
