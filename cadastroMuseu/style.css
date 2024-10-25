@@ -339,11 +339,7 @@ main > .erroContainer {
   h1 {
     font-size: 1.7em;
   }
-  iframe {
-    height: 32em;
-    margin: auto;
-    width: 27em;
-  }
+
 }
 
 @media (max-width: 600px) {
@@ -357,10 +353,7 @@ main > .erroContainer {
   h1 {
     font-size: 1.2em;
   }
-  iframe {
-    margin: auto;
-    width: 20em;
-  }
+
 }
 @media (max-width: 600px) {
   .dark {
@@ -373,8 +366,9 @@ main > .erroContainer {
   h1 {
     font-size: 1.2em;
   }
-  iframe {
-    margin: auto;
-    width: 20em;
-  }
+
 }
+
+
+
+
