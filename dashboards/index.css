@@ -44,7 +44,7 @@ body {
 select {
   font-family: "Asap Condensed";
 }
-.dark>div>select{
+.dark > div > option {
   color: #f5e0d4;
 }
 .light > div > iframe {
@@ -59,6 +59,7 @@ select {
   border-radius: 0.3em;
   border: none;
   margin: auto;
+  font-weight: 600;
   background-color: #7c3939;
   color: #f5e0d4;
   transition: transform 0.3s ease;
@@ -77,6 +78,7 @@ select {
   border-radius: 0.3em;
   border: none;
   margin: auto;
+  font-weight: 600;
   background-color: #f5e0d4;
   color: #7c3939;
   transition: transform 0.3s ease;

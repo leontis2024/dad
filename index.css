@@ -206,18 +206,18 @@ main > .erroContainer {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
   .light {
-    width: 25em;
+    width: 22.5em;
   }
   .light > div {
     margin: auto;
     width: 13em;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 400px) {
   .dark {
-    width: 25em;
+    width: 22.5em;
   }
   .dark > div {
     margin: auto;
