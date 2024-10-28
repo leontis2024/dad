@@ -1,4 +1,5 @@
-name: Deploy page
+
+name: Deploy to Render
 
 on:
 
@@ -14,7 +15,6 @@ jobs:
       - name: Render Deploy Action
         uses: johnbeynon/render-deploy-action@v0.0.8
         with:
-
           api-key: ${{secrets.apikey}}
           service-id: ${{secrets.serviceid}}
 
