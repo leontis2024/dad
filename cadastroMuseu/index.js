@@ -57,29 +57,32 @@ function verificarEmailValido(email) {
 }
 
 function fazerRequisicao(email) {
-  fetch("http://ec2-52-44-41-122.compute-1.amazonaws.com:8080/api/museuAdm", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      email: email,
-      senha: "senhaPadrao",
-    }),
-  })
+  fetch(
+    "http://ec2-52-44-41-122.compute-1.amazonaws.com:8080/api/museu_adm/inserir",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: email,
+        senha: "Mus@Senha",
+      }),
+    }
+  )
     .then((response) => {
       if (response.ok) {
-        return response.json(); 
+        return response.json();
       } else {
         throw new Error("Erro ao criar usuário");
       }
     })
     .then((data) => {
       console.log("Usuário criado:", data);
-      mostrarAlerta("Usuário museu criado com sucesso"); 
+      mostrarAlerta("Usuário museu criado com sucesso");
     })
     .catch((error) => {
       console.error("Erro:", error);
-      mostrarAlerta("Erro ao cadastrar");
+      mostrarAlerta("Erro ao criar usuárior");
     });
 }
