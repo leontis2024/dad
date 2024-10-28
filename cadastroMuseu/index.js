@@ -1,5 +1,3 @@
-const URLAPI = "__URLAPI__";
-
 const main = document.getElementsByTagName("main")[0];
 const theme = JSON.parse(localStorage.getItem("theme"));
 const botaoSubmit = document.getElementsByTagName("button")[0];
@@ -59,16 +57,19 @@ function verificarEmailValido(email) {
 }
 
 function fazerRequisicao(email) {
-  fetch("{URLAPI}/api/museuAdm/inserir", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      email: email,
-      senha: "Mus@Senha",
-    }),
-  })
+  fetch(
+    "http://ec2-52-44-41-122.compute-1.amazonaws.com:8080/api/museuAdm/inserir",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: email,
+        senha: "Mus@Senha",
+      }),
+    }
+  )
     .then((response) => {
       if (response.ok) {
         return response.json();
