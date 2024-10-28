@@ -58,7 +58,7 @@ function verificarEmailValido(email) {
 
 function fazerRequisicao(email) {
   fetch(
-    "http://ec2-52-44-41-122.compute-1.amazonaws.com:8080/api/museu_adm/inserir",
+    "http://ec2-52-44-41-122.compute-1.amazonaws.com:8080/api/museuAdm/inserir",
     {
       method: "POST",
       headers: {
@@ -83,6 +83,6 @@ function fazerRequisicao(email) {
     })
     .catch((error) => {
       console.error("Erro:", error);
-      mostrarAlerta("Erro ao criar usuárior");
+      mostrarAlerta("Erro ao criar usuário");
     });
 }
