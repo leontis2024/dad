@@ -91,9 +91,6 @@ select {
   transform: scale(1.1);
 }
 @media (max-width: 1400px) {
-  .light {
-    width: 55em;
-  }
   .principal {
     width: 30em;
     margin: auto;
@@ -108,9 +105,6 @@ select {
   }
 }
 @media (max-width: 1400px) {
-  .dark {
-    width: 55em;
-  }
   .principal {
     width: 30em;
     margin: auto;
