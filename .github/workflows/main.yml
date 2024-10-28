@@ -1,6 +1,8 @@
+
 name: Deploy to Render
 
 on:
+
   pull_request:
     branches: ["main"]
     types: [closed]
@@ -15,3 +17,4 @@ jobs:
         with:
           api-key: ${{secrets.apikey}}
           service-id: ${{secrets.serviceid}}
+
