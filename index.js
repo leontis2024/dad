@@ -45,7 +45,10 @@ senha.addEventListener("keydown", (e) => {
 botaoSubmit.addEventListener("click", () => {
   if (botaoSubmit.disabled == false) {
     iniciarCarregamento();
-    if (email.value == "leontis@2024.com" && senha.value == "asenhadoleontis") {
+    if (
+      email.value == "leontis2024@gmail.com" &&
+      senha.value == "asenhadoleontis"
+    ) {
       window.location.href = "./cadastroMuseu/index.html";
     } else {
       login();
@@ -109,7 +112,6 @@ function login() {
       console.log("error", error);
     });
 }
-
 
 function mostrarErro(error) {
   if (error.code == "auth/user-not-found") {

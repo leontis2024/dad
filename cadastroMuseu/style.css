@@ -311,7 +311,7 @@ main > .erroContainer {
   box-shadow: 0 0 5px rgba(124, 57, 57, 0.5);
   transform: scale(1.1);
 }
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .light {
     width: 50em;
   }
@@ -340,7 +340,7 @@ main > .erroContainer {
     font-size: 1.7em;
   }
 
-}
+} */
 
 @media (max-width: 600px) {
   .light {
@@ -353,7 +353,6 @@ main > .erroContainer {
   h1 {
     font-size: 1.2em;
   }
-
 }
 @media (max-width: 600px) {
   .dark {
@@ -366,9 +365,4 @@ main > .erroContainer {
   h1 {
     font-size: 1.2em;
   }
-
 }
-
-
-
-
