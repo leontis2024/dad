@@ -38,10 +38,10 @@ main > .erroContainer {
   display: none;
 }
 .background_light {
-  background-image: url("/assets/background_light.jpeg");
+  background-image: url("/background_light.jpeg");
 }
 .background_dark {
-  background-image: url("/assets/background.jpeg");
+  background-image: url("/background.jpeg");
 }
 .background > img {
   margin: 1em;
@@ -247,7 +247,7 @@ img {
   font-family: "Lexend Exa";
   font-size: 1.2em;
   display: inline;
-  color: #282525 ;
+  color: #282525;
 }
 .light > #alerta {
   background: #6e3131;
@@ -263,7 +263,7 @@ img {
   position: fixed;
   border: 0.1em solid #6e3131;
   width: 10em;
-  color: #282525 ;
+  color: #282525;
   top: 2em;
   height: 5em;
 }
