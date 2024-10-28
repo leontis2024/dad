@@ -1,10 +1,9 @@
 name: Deploy page
 
 on:
-  push:
-    branches: ["qa"]
   pull_request:
-    branches: ["qa"]
+    branches: ["main"]
+    types: [closed]
 
 jobs:
   build:
@@ -14,5 +13,5 @@ jobs:
       - name: Render Deploy Action
         uses: johnbeynon/render-deploy-action@v0.0.8
         with:
-          service-id: ${{secrets.serviceid}}
           api-key: ${{secrets.apikey}}
+          service-id: ${{secrets.serviceid}}
