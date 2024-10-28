@@ -90,34 +90,6 @@ select {
   box-shadow: 0 0 5px rgba(245, 224, 212, 0.5);
   transform: scale(1.1);
 }
-@media (max-width: 1400px) {
-  .principal {
-    width: 30em;
-    margin: auto;
-  }
-  h1 {
-    font-size: 1.7em;
-  }
-  iframe {
-    width: 27em;
-    height: 32em;
-    margin: auto;
-  }
-}
-@media (max-width: 1400px) {
-  .principal {
-    width: 30em;
-    margin: auto;
-  }
-  h1 {
-    font-size: 1.7em;
-  }
-  iframe {
-    height: 32em;
-    margin: auto;
-    width: 27em;
-  }
-}
 
 @media (max-width: 720px) {
   .light {
