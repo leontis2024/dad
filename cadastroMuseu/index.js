@@ -65,11 +65,8 @@ function fazerRequisicao(email) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        museuAdm: {
-          id: 0,
-          emailAdm: email,
-          senhaAdm: "Mus@Senha",
-        },
+        emailAdm: email,
+        senhaAdm: "Mus@Senha",
       }),
     }
   )
