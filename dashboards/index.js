@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (width <= 1200) {
       dashboard.setAttribute(
         "src",
-        "https://media.tenor.com/WsmCp50pYmwAAAAM/gato-gato-mago.gif"
+        "https://app.powerbi.com/view?r=eyJrIjoiNmU0ODNmNDctMTQzOC00ZTBhLTk5YmMtYWIyNzI4MTAxOTQ0IiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9"
       );
     } else {
       dashboard.setAttribute(
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (width <= 1200) {
         dashboard.setAttribute(
           "src",
-          "https://media.tenor.com/WsmCp50pYmwAAAAM/gato-gato-mago.gif"
+          "https://app.powerbi.com/view?r=eyJrIjoiNmU0ODNmNDctMTQzOC00ZTBhLTk5YmMtYWIyNzI4MTAxOTQ0IiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9"
         );
       } else {
         dashboard.setAttribute(
