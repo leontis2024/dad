@@ -20,12 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (width <= 1200) {
       dashboard.setAttribute(
         "src",
-        "https://app.powerbi.com/view?r=eyJrIjoiNmU0ODNmNDctMTQzOC00ZTBhLTk5YmMtYWIyNzI4MTAxOTQ0IiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9"
+        "https://app.powerbi.com/view?r=eyJrIjoiYTVjYTAxYjItNTAxYy00MjVmLThkMDYtMDY3OWEzNWU4NTY0IiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9"
       );
     } else {
       dashboard.setAttribute(
         "src",
-        "https://app.powerbi.com/view?r=eyJrIjoiMzZmNDg5YWUtZmExNS00ZWUzLWE5NjAtYTk4OTY5NjhhZmI0IiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9"
+        "https://app.powerbi.com/view?r=eyJrIjoiNjA0NGQyZTUtNGRmNC00YTNiLTgxZTAtMDZmZTUzMjQ3MGNjIiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9"
       );
     }
   } else {
