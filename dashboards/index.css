@@ -3,10 +3,14 @@
 iframe {
   border-radius: 10px;
   margin: auto;
+  width: "860";
+  height: "510";
 }
 h1 {
   font-family: "Lexend Exa";
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.2em;
 }
 .light > h1 {
   color: #000000b3;
@@ -96,6 +100,38 @@ select {
     width: 40em;
   }
   .principal {
+    width: 35em;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  iframe {
+    margin: auto;
+    width: 30em
+  }
+}
+@media (max-width: 720px) {
+  .dark {
+    width: 40em;
+  }
+  .principal {
+    width: 35em;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  iframe {
+    width: 30em
+  }
+}
+
+@media (max-width: 450px) {
+  .light {
+    width: 40em;
+  }
+  .principal {
     width: 30em;
     margin: auto;
   }
@@ -104,10 +140,10 @@ select {
   }
   iframe {
     margin: auto;
-    width: 20em;
+    width: 20em
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 450px) {
   .dark {
     width: 40em;
   }
@@ -120,6 +156,6 @@ select {
   }
   iframe {
     margin: auto;
-    width: 20em;
+    width:20em
   }
 }
